@@ -1,0 +1,1 @@
+export interface QueryParams{ page?:number; pageSize?:number; search?:string; filters?:Record<string,string|number|boolean|undefined>; sortBy?:string; sortOrder?:'ascend'|'descend' }export interface PageResult<T>{ data:T[]; total:number; page:number; pageSize:number }export interface ApiState<T>{ data:T; message?:string }
