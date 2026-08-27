@@ -1,0 +1,1 @@
+import type { Fee } from '@/types/domain';export const feeBalance=(fee:Fee)=>Math.max(fee.amount-fee.discount+fee.fine-fee.paidAmount,0);export const money=(n:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n);
