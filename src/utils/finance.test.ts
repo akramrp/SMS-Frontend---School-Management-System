@@ -1,0 +1,1 @@
+import{describe,expect,it}from'vitest';import{feeBalance}from'./finance';import{fees}from'@/mocks/data/core';describe('feeBalance',()=>{it('calculates discount, fine and payments',()=>{expect(feeBalance(fees[1])).toBe(225)})});

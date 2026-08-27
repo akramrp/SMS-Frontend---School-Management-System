@@ -1,0 +1,1 @@
+import{Tag}from'antd';export function StatusBadge({status}:{status:string}){const color=status.includes('paid')||status==='active'||status==='present'||status==='pass'?'green':status==='partial'||status==='late'||status==='pending'?'gold':'red';return <Tag color={color}>{status.replace('_',' ').toUpperCase()}</Tag>}

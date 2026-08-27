@@ -1,0 +1,1 @@
+import{describe,expect,it}from'vitest';import{studentService}from'@/services/api/schoolServices';describe('studentService',()=>{it('filters paginated student data through service abstraction',async()=>{const page=await studentService.getStudents({search:'Mia'});expect(page.total).toBe(1);expect(page.data[0].admissionNo).toBe('ADM-2026-001')})});

@@ -1,0 +1,1 @@
+import type { ThemeConfig } from 'antd';export const appTheme:ThemeConfig={token:{colorPrimary:'#2563eb',borderRadius:10,fontFamily:'Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif'},components:{Layout:{siderBg:'#0f172a',triggerBg:'#1e293b'},Menu:{darkItemBg:'#0f172a',darkSubMenuItemBg:'#111827',darkItemSelectedBg:'#2563eb'}}};

@@ -1,0 +1,1 @@
+import{describe,expect,it}from'vitest';import{roles}from'@/mocks/data/core';describe('RBAC',()=>{it('keeps accountant away from settings management',()=>{const accountant=roles.find(r=>r.id==='accountant');expect(accountant?.permissions).toContain('fees.collect');expect(accountant?.permissions).not.toContain('settings.manage')})});
